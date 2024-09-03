@@ -1,17 +1,17 @@
 
 class HelloWorld {
     public static void main(String[] args) {
-        int n=541;
+        int n=153;
         int temp=n;
         int rem=0;
-        int rev=0;
+        int a=0;
         while(temp>0){
             rem=temp%10;
-            rev=rev*10+rem;
+            a=a+(rem*rem*rem);
             temp=temp/10;
             
         }
-        if(rev==n){
+        if(a==n){
             System.out.print("Armstrong");
         }
         else{
